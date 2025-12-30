@@ -1,0 +1,87 @@
+/* 1. Stwórz klasę 'direction', nadaj jej flexbox i wypróbuj kazde mozliwe ustawienie:
+  a) w wierszu
+  b) w kolumnie
+  c) w wierszu odwróconym (reverse)
+  d) w kolumnie odwróconej (reverse)
+  ----------------------------------------- */
+
+/* 2. Stwórz klasę 'justify', nadaj jej flexbox i wypróbuj różne sposoby rozmieszczenia elementów wzdłuż osi poziomej:
+  - flex-start
+  - flex-end
+  - center
+  - space-between
+  - space-around
+  - space-evenly
+  ----------------------------------------- */
+
+/* 3. Stwórz klasę 'align', nadaj jej flexbox i ustaw wyrównanie wzdłuż osi pionowej:
+  - flex-start
+  - center
+  - flex-end
+  - stretch
+  - baseline
+  ----------------------------------------- */
+
+/* 4. Stwórz klasę 'wrap', nadaj jej flexbox i wypróbuj:
+  - brak zawijania 
+  - zawijanie w dół
+  ----------------------------------------- */
+
+/* 5. Zagnieżdżone kontenery, rozwiązanie zadania możesz zobaczyć na grafice flexbox.png.
+    W ramach zadania należy utworzyć dwie klasy: 'inner-container' oraz 'center-box'.
+    Dla klasy 'outer-container' nadaj flexbox i wyśrodkuj wewnętrzny kontener.
+    Dla klasy 'inner-container' ustaw kolor tła, rozmiar oraz wyśrodkuj flexbox.
+    Dla klasy 'center-box' ustaw kolor tła, rozmiar elemnetu, zaokrąglenie obramowania, kolor i rozmiar tekstu oraz wyśrodkuj flexbox.
+    Pamiętaj aby kolory i rozmiary ustawić tak, aby można było je od siebie odróżnić i zawierały się w sobie.
+  ----------------------------------------- */
+.outer-container {
+  background-color: #bbdefb;
+  height: 300px;
+}
+
+/*----------------------------------------- */
+/*----------------------------------------- */
+/*----------------------------------------- */
+/* Ogólne style, nie edytujemy */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.example {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.container {
+  background-color: #e3f2fd;
+  border: 2px dashed #64b5f6;
+  padding: 10px;
+  min-height: 100px;
+}
+
+.item {
+  background-color: #90caf9;
+  border: 1px solid #1976d2;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  flex: 0 0 80px;
+}
+
+.tall {
+  height: 100px;
+}
+.short {
+  height: 40px;
+}

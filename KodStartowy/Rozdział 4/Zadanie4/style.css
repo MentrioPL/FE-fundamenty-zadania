@@ -1,0 +1,110 @@
+/* Reset i podstawowy wygląd */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+/* W ramach tego zadania znajdź i napraw trzy błędy (CSS lub HTML), poprawny wygląd strony znajdziesz w pliku StronaKoncowa.png:
+  BUG 1: W Grid #1 stopka nie wyświetla się poprawnie na dole strony, a kolumny mają złe rozmiary (Pamiętaj o DRY!).
+  BUG 2: W grid #2 elementy nie wyświetlają się w poprawnych obszarach.
+  BUG 3: W grid #3 zdjęcia nie są rozmieszczone w trzech kolumnach i są ze sobą sklejone.
+*/
+
+/* ===========================================
+   GRID #1: Główny układ strony
+   =========================================== */
+.page {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  background: #e8eaf6;
+  grid-template-columns: 1fr 3fr 1fr 3fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header header header"
+    "nav main main aside"
+    "footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background: #3f51b5;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.nav {
+  grid-area: nav;
+  background: #c5cae9;
+  padding: 10px;
+}
+.main {
+  grid-area: main;
+  background: #fff;
+  padding: 20px;
+}
+.aside {
+  grid-area: aside;
+  background: #d1c4e9;
+  padding: 20px;
+}
+.footer {
+  background: #303f9f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ===========================================
+   GRID #2: Artykuł (wewnątrz .main)
+   =========================================== */
+.post {
+  display: grid;
+  gap: 10px;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "intro title"
+    "hero hero"
+    "gallery gallery";
+}
+
+.post-hero {
+  grid-area: hero;
+  background: #bbdefb;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+.post-title {
+  grid-area: title;
+  font-size: 1.4rem;
+}
+.post-intro {
+  grid-area: intro;
+}
+.gallery {
+  grid-area: gallery;
+}
+
+/* ===========================================
+   GRID #3: Galeria zdjęć (wewnątrz artykułu)
+   =========================================== */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.photo {
+  background: #ffe082;
+  border: 1px solid #fbc02d;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}

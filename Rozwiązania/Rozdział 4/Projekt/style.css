@@ -1,0 +1,126 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  color: #222;
+}
+
+.cv {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "photo"
+    "contact"
+    "summary"
+    "experience"
+    "education"
+    "skills";
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+}
+
+/* Sekcje */
+header {
+  grid-area: header;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+header h2 {
+  margin: 0;
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.contact {
+  grid-area: contact;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.summary,
+.experience,
+.education,
+.skills {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.summary {
+  grid-area: summary;
+}
+.experience {
+  grid-area: experience;
+}
+.education {
+  grid-area: education;
+}
+.skills {
+  grid-area: skills;
+}
+
+.photo {
+  grid-area: photo;
+  display: flex;
+  justify-content: center;
+}
+.photo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Mobile first */
+@media (min-width: 768px) {
+  .cv {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "photo contact"
+      "summary summary"
+      "experience experience"
+      "education skills";
+  }
+
+  .photo {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .contact {
+    text-align: left;
+    align-self: center;
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+  .cv {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "header header header"
+      "contact contact photo"
+      "summary summary education"
+      "experience experience skills";
+  }
+
+  .summary,
+  .experience {
+    padding: 1.5rem;
+  }
+
+  .photo img {
+    width: 220px;
+    height: 220px;
+  }
+}

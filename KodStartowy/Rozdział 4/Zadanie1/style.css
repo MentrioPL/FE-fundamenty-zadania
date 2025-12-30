@@ -1,0 +1,94 @@
+/* PODSTAWY */
+/* 1. Nadaj wszystkim nagłówkom h1 niebieski kolor i wyśrodkuj tekst */
+/* TU WSTAW SELEKTOR */
+ {
+  color: #0077cc;
+  text-align: center;
+}
+
+/* 2. Ustaw tło dla wszystkich sekcji (.animals, .birds, #fish) za pomoca jednego selektora */
+ {
+  background-color: #f0f8ff;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+/* 3. Nadaj tekst w elemencie o id 'fish' kolor zielony */
+ {
+  color: #006400;
+}
+
+/* 4. Wyróżnij elementy listy z klasą highlight innym tłem */
+ {
+  background-color: #ffeb3b;
+}
+
+/* KOMBINATORY I PSEUDOKLASY */
+/* 5. Zmień kolor wszystkich <li> należących do sekcji klasy birds */
+ {
+  color: #00796b;
+}
+
+/* 6. Zmień kolor tylko pierwszego elementu listy w każdej sekcji (znacznik + pseudoklasa) */
+ {
+  color: #d32f2f;
+}
+
+/* 7. Nadaj pogrubienie elementowi <p>, który bezpośrednio następuje po elemencie z klasą note */
+ {
+  font-weight: bold;
+}
+
+/* 8. Po najechaniu myszką na <li> zmień jego tło na jasnoniebieskie */
+ {
+  background-color: #e3f2fd;
+  cursor: pointer;
+}
+
+/* PSEUDOELEMENTY */
+
+/* 9. Dodaj znak ❖ przed każdym nagłówkiem h2 */
+ {
+  content: "❖ ";
+  color: #1976d2;
+}
+
+/* 10. Dodaj kropkę po każdym elemencie listy */
+ {
+  content: " •";
+  color: gray;
+}
+
+/* NADPISYWANIE STYLÓW */
+
+/* 11. Sekcja .animals wewnątrz main ma inny kolor tła niż inne sekcje */
+ {
+  background-color: #e0f7fa;
+}
+
+/* 12. Dodaj klasę special dla <span> i ustaw kolor fioletowy.
+       Następnie utwórz bardziej szczegółowy selektor, który nadpisze ten kolor tylko w sekcji o ID fish */
+
+ {
+  color: purple;
+}
+
+ {
+  color: teal;
+}
+
+/* 13. Ustaw domyślną czcionkę i tło strony dla treści całego dokumentu */
+ {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+/* ===== DLA CHĘTNYCH ===== */
+/* 14. Dowiedz się czym jest słowo kluczowe '!important' i spróbuj wykorzystać je do nadpisania jakiejś cechy
+    przy użyciu selektora z mniejszą specyficznością niż inny selektor w tym pliku CSS.
+
+    TIP: important używa się bardzo rzadko i tylko w ostateczności, gdy nie ma innej możliwości nadpisania stylu
+*/

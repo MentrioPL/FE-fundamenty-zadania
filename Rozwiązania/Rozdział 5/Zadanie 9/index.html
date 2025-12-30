@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FastShip – Profesjonalne usługi logistyczne</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="logo">FastShip</h1>
+        <nav class="nav">
+          <a href="#" class="nav__item">Strona główna</a>
+          <a href="#" class="nav__item">Usługi</a>
+          <a href="#" class="nav__item">Cennik</a>
+          <a href="#" class="nav__item">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__text">
+        <h2>
+          Profesjonalne rozwiązania logistyczne dla firm i klientów
+          indywidualnych
+        </h2>
+        <p class="hero__description">
+          Od ponad 15 lat FastShip dostarcza przesyłki na terenie całego kraju i
+          Europy. Nasz zespół skupia się na szybkości, bezpieczeństwie i
+          niezawodności usług.
+        </p>
+
+        <button id="ctaBtn" class="cta-btn">Nadaj przesyłkę</button>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span id="shipmentsCounter" data-count="372940">372 940</span>
+          <p>Zrealizowanych przesyłek</p>
+        </div>
+
+        <div class="stat">
+          <span id="clientsCounter" data-count="12840">12 840</span>
+          <p>Klientów biznesowych</p>
+        </div>
+
+        <div class="stat">
+          <span id="countriesCounter" data-count="32">32</span>
+          <p>Obsługiwanych krajów</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>Zakres usług FastShip</h2>
+
+      <div class="services__grid" id="servicesGrid">
+        <div class="service-card" data-service="express">
+          <h3>Dostawa Express</h3>
+          <p>Natychmiastowa realizacja przesyłek na terenie Polski.</p>
+        </div>
+
+        <div class="service-card" data-service="standard">
+          <h3>Dostawa Standard</h3>
+          <p>Ekonomiczne rozwiązanie dla małych i średnich firm.</p>
+        </div>
+
+        <div class="service-card" data-service="international">
+          <h3>Przesyłki Międzynarodowe</h3>
+          <p>Profesjonalna obsługa wysyłek na terenie Europy.</p>
+        </div>
+      </div>
+
+      <button id="addServiceBtn" class="add-btn">Dodaj nową usługę</button>
+    </section>
+
+    <section class="news">
+      <h2>Aktualności FastShip</h2>
+
+      <div class="news__list" id="newsList">
+        <article class="news-item">
+          <h3 class="news-title">Nowa flota samochodów elektrycznych</h3>
+          <p class="news-text">
+            Wprowadzamy 40 nowych pojazdów zeroemisyjnych, aby przyspieszyć
+            proces dostaw oraz ograniczyć ślad węglowy.
+          </p>
+        </article>
+
+        <article class="news-item">
+          <h3 class="news-title">Partnerstwo z European Logistics Group</h3>
+          <p class="news-text">
+            Współpraca pozwoli nam na zwiększenie zasięgu operacji w krajach
+            Europy Zachodniej.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <div class="banner" id="infoBanner">
+      <p class="banner__text">
+        Trwa modernizacja systemu śledzenia przesyłek. Utrudnienia potrwają do
+        godziny 23:00.
+      </p>
+    </div>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>

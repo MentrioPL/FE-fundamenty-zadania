@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2022", // Kompatybilność z przeglądarkami
+    "module": "esnext", // System modułów
+    "rootDir": "./", // Katalog główny projektu
+    "outDir": "./", // Pliki .js będą generowane w tych samych folderach co pliki .ts
+    "strict": true, // Włączenie ścisłego sprawdzania typów
+    "noEmitOnError": false, // Generuj pliki .js nawet jeśli są błędy
+    "isolatedModules": true // Wymuś traktowanie każdego pliku jako modułu
+  },
+  "include": ["**/*.ts"], // Uwzględnij wszystkie pliki .ts w projekcie
+  "exclude": ["node_modules"] // Wyklucz katalog node_modules
+}

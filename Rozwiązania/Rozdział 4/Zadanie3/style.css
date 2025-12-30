@@ -1,0 +1,102 @@
+/* 1.
+  ----------------------------------------- */
+.direction {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2.
+  ----------------------------------------- */
+.justify {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 3.
+  ----------------------------------------- */
+.align {
+  display: flex;
+  align-items: center;
+}
+
+/* 4.
+  ----------------------------------------- */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 5.
+  ----------------------------------------- */
+.outer-container {
+  background-color: #bbdefb;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  background-color: #64b5f6;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-box {
+  background-color: #0d47a1;
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ogólne style, nie edytujemy */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.example {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.container {
+  background-color: #e3f2fd;
+  border: 2px dashed #64b5f6;
+  padding: 10px;
+  min-height: 100px;
+}
+
+.item {
+  background-color: #90caf9;
+  border: 1px solid #1976d2;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+  flex: 0 0 80px;
+}
+
+.tall {
+  height: 100px;
+}
+.short {
+  height: 40px;
+}

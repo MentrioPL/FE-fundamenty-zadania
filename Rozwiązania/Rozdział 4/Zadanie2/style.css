@@ -1,0 +1,163 @@
+/* 1. KOLORY I TŁA
+---------------------------------------------------- */
+.text-hex {
+  color: #123abc;
+}
+
+.text-rgb {
+  color: rgb(220, 20, 60);
+}
+
+.background-hex {
+  background-color: #556b2f;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.background-rgb {
+  background-color: rgb(70, 130, 180);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Jeśli tło jest ciemne, tekst ustawiamy na biały */
+.colors p,
+.colors div {
+  color: #fff;
+}
+
+/* 2. CZCIONKI I STYL TEKSTU
+  ---------------------------------------------------- */
+.font-family {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-weight {
+  font-weight: 700;
+}
+
+.font-style {
+  font-style: italic;
+}
+
+.font-size {
+  font-size: 20px;
+}
+
+.line-height {
+  line-height: 1.8;
+}
+
+/* Styl ogólny dla strony */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 3. ODSTĘPY I ROZMIARY
+  ---------------------------------------------------- */
+.box {
+  background-color: #e3f2fd;
+  border: 2px solid #90caf9;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-margin {
+  margin: 20px;
+}
+
+.box-padding {
+  padding: 30px;
+}
+
+.box-width {
+  width: 200px;
+  height: 100px;
+}
+
+.box-minmax {
+  min-width: 150px;
+  max-width: 400px;
+  min-height: 100px;
+  max-height: 200px;
+}
+
+/* 4. OBRAMOWANIA
+  ---------------------------------------------------- */
+.border-solid {
+  border: 2px solid #000;
+  padding: 10px;
+  margin: 5px;
+}
+
+.border-dashed {
+  border: 3px dashed #1976d2;
+  padding: 10px;
+  margin: 5px;
+}
+
+.border-radius {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* 5. POZYCJONOWANIE
+  ---------------------------------------------------- */
+.relative {
+  position: relative;
+  background-color: #c8e6c9;
+  width: 300px;
+  height: 150px;
+  margin-bottom: 30px;
+  border: 2px solid #2e7d32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background-color: #81c784;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #1565c0;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.sticky-container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f1f8e9;
+  height: 1000px;
+  overflow-y: scroll;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #ffeb3b;
+  padding: 8px;
+  font-weight: bold;
+  border: 1px solid #fbc02d;
+}

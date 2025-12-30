@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akademia ShiftPoint w podrózy</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #e24a4a;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      section {
+        flex: 1 1 45%;
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      h2 {
+        color: #e24a4a;
+      }
+
+      img {
+        max-width: 300px;
+        border-radius: 5px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+
+      form label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #000000;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Akademia ShiftPoint w podrózy</h1>
+      <p>Odkrywaj świat razem z nami</p>
+    </header>
+
+    <main>
+      <section id="miejsca">
+        <h2>Nasze ulubione miejsca</h2>
+        <ul>
+          <li>
+            <h3>Hiszpania</h3>
+            <img src="spain.jpg" alt="Hiszpania" />
+            <p>Padel, paella i cudowna pogoda.</p>
+          </li>
+          <li>
+            <h3>Japonia</h3>
+            <img src="japan.jpg" alt="Japonia" />
+            <p>Kraj kontrastów, nowoczesności i tradycji.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="plan">
+        <h2>Plan podróży 2025</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Kraj</th>
+              <th>Miasto</th>
+              <th>Miesiąc</th>
+              <th>Cel podróży</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Norwegia</td>
+              <td>Lillehammer</td>
+              <td>Luty</td>
+              <td>Wyjazd na narty</td>
+            </tr>
+            <tr>
+              <td>Włochy</td>
+              <td>Mediolan</td>
+              <td>Maj</td>
+              <td>Zwiedzanie i degustacja kuchni</td>
+            </tr>
+            <tr>
+              <td>Hiszpania</td>
+              <td>Barcelona</td>
+              <td>Sierpień</td>
+              <td>Wakacyjny odpoczynek</td>
+            </tr>
+            <tr>
+              <td>USA</td>
+              <td>Boston</td>
+              <td>Wrzesień</td>
+              <td>Nasz pierwszy mecz NBA</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="kontakt">
+        <h2>Skontaktuj się z nami</h2>
+        <form>
+          <label for="name">Imię:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Twoje imię"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Twój email"
+            required
+          />
+
+          <label for="message">Wiadomość:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Napisz wiadomość..."
+          ></textarea>
+
+          <input type="submit" value="Wyślij" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © 2026 ShiftPoint | Znajdź nas na
+        <a href="#" style="color: #4a90e2">Instagramie</a> i
+        <a href="#" style="color: #4a90e2">GitHubie</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!--
+1. Dodaj tytuł strony w elemencie head.
+2. Za pomocą odpowiedniego znacznika semantycznego zdefiniuj sekcję nagłówka strony. Niech zawiera nagłówek główny i paragraf z opisem.
+3. W sekcji miejsca dodaj nagłówek i dodaj listę z ulubionymi miejscami do odwiedzenia. 
+   Każde miejsce powinno zawierać nagłówek, obrazek i krótki opis. 
+   Pamiętaj o atrybutach alt dla obrazków, odpowiednim zagnieżdżeniu nagłówków, a własne grafiki wrzuć do tego folderu.
+   Wszystkie nagłówki sekcji powinny być tego samego poziomu (2).
+4. W sekcji plan podróży dodaj nagłówek i tabelę z planowanymi podróżami na ten rok. 
+   Tabela powinna mieć nagłówki kolumn: Kraj, Miasto, Miesiąc, Cel podróży oraz wiersze z danymi, im więcej tym lepiej!
+5. W sekcji kontakt dodaj formularz kontaktowy z polami: Imię, Email, Wiadomość oraz przyciskiem Wyślij.
+   Użyj odpowiednich typów inputów i pamiętaj o etykietach dla każdego pola.
+   Nie musisz martwić się o znacznik <br/>, ponieważ style CSS zadbają o odpowiednie odstępy między elementami formularza.
+6. W stopce dodaj paragraf '© 2026 MOJA NAZWA | Znajdź mnie na ' oraz linki do profili na mediach społecznościowych.
+   Upewnij się, że linki są klikalne i otwierają się w nowej karcie.
+
+========DLA CHĘTNYCH========
+7. Pod sekcją nagłówka dodaj nową sekcję "O mnie", w której umieścisz krótki opis siebie oraz swoje zdjęcie.
+8. W stopce strony dodaj kolejny paragraf z linkiem "Powrót na górę strony", który po kliknięciu przewinie stronę z powrotem do góry.
+   Sprawdź jak działają odsyłacze do kotwic w HTML.
+9. Spróbuj dodać nową sekcję „Ostatnie wpisy z bloga”, w której umieścisz 2–3 mini artykuły:
+    - użyj <article> i <h3> dla tytułu,
+    - <p> dla treści,
+    - <a> dla linku „Czytaj więcej”.
+-->
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Baw się stylami, zmieniaj, kombinuj, sprawdzaj jaki ma to wpływ na wygląd strony -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #e24a4a;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      section {
+        flex: 1 1 45%;
+        background: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      h2 {
+        color: #e24a4a;
+      }
+
+      img {
+        max-width: 300px;
+        border-radius: 5px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+
+      form label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #000000;
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nagłówek strony -->
+
+    <main>
+      <section id="miejsca">
+        <!-- Lista ulubionych miejsc -->
+      </section>
+
+      <section id="plan">
+        <!-- Tabela z planowanymi podróżami -->
+      </section>
+
+      <section id="kontakt">
+        <!-- Formularz kontaktowy -->
+      </section>
+    </main>
+
+    <!-- Stopka strony -->
+  </body>
+</html>
